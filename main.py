@@ -5,6 +5,7 @@ import httpx
 from app.services.llmapi.bailian_client import Qwen3LLMClient
 
 
+# Initialize the client
 async def main():
     http_client = httpx.AsyncClient()
     client = Qwen3LLMClient(http_client)
